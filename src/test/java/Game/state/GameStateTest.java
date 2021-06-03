@@ -136,7 +136,7 @@ public class GameStateTest {
                         {-1, 3, -1,0,-1,0,-1,0},
                         {0, -1, 1,1,0,-1,0,-1},
                         { -1, 0,-1,0,-1,0,-1,0}});
-        // testing CREAM knight (invalid moves)
+        // testing white knight (invalid moves)
         assertFalse(KnightGame.canKnightMoveTo(0,0,0,1));
         assertFalse(KnightGame.canKnightMoveTo(2,2,0,1));
         assertFalse(KnightGame.canKnightMoveTo(1,3,0,1));
@@ -147,7 +147,7 @@ public class GameStateTest {
         assertFalse(KnightGame.canKnightMoveTo(5,3,5,1));
         assertFalse(KnightGame.canKnightMoveTo(3,0,5,1));
 
-        // testing knights (valid moves)
+        // testing black knights (valid moves)
         assertTrue(KnightGame.canKnightMoveTo(7,2,5,1));
         assertTrue(KnightGame.canKnightMoveTo(7,0,5,1));
 
@@ -165,14 +165,16 @@ public class GameStateTest {
                 {-1, 0, 1,0,-1,0,-1,0},
                 {0, -1, 1,-1,0,-1,0,-1},
                 {-1, 0, 1,0,-1,0,-1,0}});
-        assertEquals("CREAM BROWN CREAM BROWN CREAM BROWN CREAM BROWN \n"
-                     + "BROWN CREAM whiteKnight OccupiedBefore BROWN CREAM BROWN CREAM \n"
-                     + "CREAM BROWN CREAM BROWN OccupiedBefore BROWN CREAM BROWN \n"
-                     + "BROWN CREAM BROWN OccupiedBefore BROWN CREAM BROWN CREAM \n"
-                     + "CREAM blackKnight CREAM OccupiedBefore CREAM BROWN CREAM BROWN \n"
-                     + "BROWN CREAM OccupiedBefore CREAM BROWN CREAM BROWN CREAM \n"
-                     + "CREAM BROWN OccupiedBefore BROWN CREAM BROWN CREAM BROWN \n"
-                     +"BROWN CREAM OccupiedBefore CREAM BROWN CREAM BROWN CREAM \n", KnightGameWithSomeValue.toString());
+        assertEquals("""
+                CREAM BROWN CREAM BROWN CREAM BROWN CREAM BROWN\s
+                BROWN CREAM whiteKnight OccupiedBefore BROWN CREAM BROWN CREAM\s
+                CREAM BROWN CREAM BROWN OccupiedBefore BROWN CREAM BROWN\s
+                BROWN CREAM BROWN OccupiedBefore BROWN CREAM BROWN CREAM\s
+                CREAM blackKnight CREAM OccupiedBefore CREAM BROWN CREAM BROWN\s
+                BROWN CREAM OccupiedBefore CREAM BROWN CREAM BROWN CREAM\s
+                CREAM BROWN OccupiedBefore BROWN CREAM BROWN CREAM BROWN\s
+                BROWN CREAM OccupiedBefore CREAM BROWN CREAM BROWN CREAM\s
+                """, KnightGameWithSomeValue.toString());
     }
 }
 

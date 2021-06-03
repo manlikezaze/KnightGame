@@ -29,7 +29,7 @@ public class GameResult {
     private int stepsFirstPlayer;
 
     /**
-     * The number of steps made by the player one.
+     * The number of steps made by the player two.
      */
     private int stepsSecondPlayer;
     /**

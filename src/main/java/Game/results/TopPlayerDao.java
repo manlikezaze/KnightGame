@@ -34,7 +34,7 @@ public class TopPlayerDao extends GenericJpaDao<TopPlayer> {
     /**
      *
      * @param name is  the player name.
-     * @param numOfGames is the updated number of games won by the payer.
+     * @param numOfGames is the updated number of games won by the player.
      */
     @Transactional
     public void update(String name, Integer numOfGames) {

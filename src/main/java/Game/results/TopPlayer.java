@@ -18,7 +18,7 @@ import javax.persistence.*;
 public class TopPlayer {
 
     /**
-     * The name of the player one.
+     * The name of the player.
      */
 
     @Id

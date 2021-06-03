@@ -167,12 +167,12 @@ public class GameState {
               this.currentPlayer = this.SecondPlayer;
               this.board[row][col].setType(2);
               this.board[prevRow][prevCol].setType(1);
-              log.info("cell at ({},{}) has be occupied by the a white knight.", row, col);
+              log.info("cell at ({},{}) has been occupied by the a white knight.", row, col);
         } else {
               this.currentPlayer = this.FirstPlayer;
               this.board[row][col].setType(3);
               this.board[prevRow][prevCol].setType(1);
-              log.info("cell at ({},{}) has be occupied by the a black knight.", row, col);
+              log.info("cell at ({},{}) has been occupied by the a black knight.", row, col);
         }
 
         log.info(String.valueOf(this));
