@@ -15,7 +15,7 @@
     <developer>
         <id>vkxrui</id>
         <name>Osazee Eguagie</name>
-        <email>eguagieosaze@gmail.com</email>
+        <email>og4l@mailbox.unideb.hu</email>
         <organization>Faculty of Informatics, University of Debrecen</organization>
         <organizationUrl>https://inf.unideb.hu/</organizationUrl>
     </developer>
@@ -135,6 +135,23 @@
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
             <version>3.8.1</version>
+        </plugin>
+        <plugin>
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
+            <version>0.8.7</version>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>prepare-agent</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+        <plugin>
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
+            <version>0.8.7</version>
         </plugin>
         <plugin>
             <groupId>org.projectlombok</groupId>

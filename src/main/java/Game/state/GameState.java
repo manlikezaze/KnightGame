@@ -77,8 +77,9 @@ public class GameState {
      * Creates a {@code GameState} object that is initialized it with
      * the specified array.
      *
-     * @param a an array of size 8&#xd7;8 representing the initial configuration
-     *          of the board
+     * @param FirstPlayer the first player by definition
+     * @param SecondPlayer the second player by definition
+     *
      */
     public GameState(int[][] a , Player FirstPlayer, Player SecondPlayer) {
         this.FirstPlayer = FirstPlayer;
@@ -87,8 +88,6 @@ public class GameState {
         initBoard(a);
 
     }
-
-
 
     private void initBoard(int[][] a) {
         this.board = new cell[8][8];
@@ -99,11 +98,8 @@ public class GameState {
             }
         }
     }
-
-
-
     /**
-     * Returns whether the cell at the specified position can a knight move to it or not
+     * Returns whether the cell at the specified position can a knight move to it or not.
      *
      * @param row represent  the row cell
      * @param col the column the cell
@@ -133,6 +129,8 @@ public class GameState {
      * Checks whether the game is finished.
      *
      * @return {@code true} if the game is finished, {@code false} otherwise
+     * @param nextKnightRow represents the row of a cell a knight can move to.
+     * @param nextKnightCol represents the column of a cell a knight can move to.
      */
     public boolean isGameFinished(int nextKnightRow , int nextKnightCol){
         isGameFinihed = true;
