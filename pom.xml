@@ -5,8 +5,8 @@
 <modelVersion>4.0.0</modelVersion>
 <groupId>hu.unideb.inf</groupId>
 <artifactId>KnightGame</artifactId>
-<version>1.0</version>
-<description>The Knights Game </description>
+<version>1.1</version>
+<description>The Knights Game. This is my final project for Software Engineering class. A chess board game with 8x8 cells, containing 2 knights playing against each other. </description>
 <scm>
     <developerConnection>scm:https://github.com/manlikezaze/KnightGame.git</developerConnection>
     <connection>scm:https://github.com/manlikezaze/KnightGame.git</connection>
@@ -136,23 +136,18 @@
             <artifactId>maven-compiler-plugin</artifactId>
             <version>3.8.1</version>
         </plugin>
-        <plugin>
-            <groupId>org.jacoco</groupId>
-            <artifactId>jacoco-maven-plugin</artifactId>
-            <version>0.8.7</version>
-            <executions>
-                <execution>
-                    <goals>
-                        <goal>prepare-agent</goal>
-                    </goals>
-                </execution>
-            </executions>
-        </plugin>
-        <plugin>
-            <groupId>org.jacoco</groupId>
-            <artifactId>jacoco-maven-plugin</artifactId>
-            <version>0.8.7</version>
-        </plugin>
+          <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.7</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                </executions>
+           </plugin>
         <plugin>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok-maven-plugin</artifactId>
@@ -220,6 +215,18 @@
                 </reportSet>
             </reportSets>
         </plugin>
+	 <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.7</version>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <report>report</report>
+                        </reports>
+                    </reportSet>
+            </reportSets>
+            </plugin>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-checkstyle-plugin</artifactId>

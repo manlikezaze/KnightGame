@@ -79,7 +79,7 @@ public class GameState {
      *
      * @param FirstPlayer the first player by definition
      * @param SecondPlayer the second player by definition
-     *
+     * @param a the 2d array
      */
     public GameState(int[][] a , Player FirstPlayer, Player SecondPlayer) {
         this.FirstPlayer = FirstPlayer;
@@ -183,10 +183,7 @@ public class GameState {
         if(Math.abs(prevRow-row) == 2 && Math.abs(prevCol-col) == 1){
             return true;
         }
-        if (Math.abs(prevRow-row) == 1 && Math.abs(prevCol-col) == 2){
-            return true;
-        }
-        return false;
+        return Math.abs(prevRow - row) == 1 && Math.abs(prevCol - col) == 2;
     }
 
     public String toString() {

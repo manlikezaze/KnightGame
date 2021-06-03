@@ -49,7 +49,7 @@ public class TopPlayerDao extends GenericJpaDao<TopPlayer> {
     /**
      * Returns the list of {@code n} best results with respect to
      * number of games won.
-     * (@param n) the maximum number of results to be returned
+     * @param n the maximum number of results to be returned
      * @return the list of {@code n} best results with respect to
      *   number of games won
      */

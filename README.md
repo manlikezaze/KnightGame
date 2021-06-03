@@ -1,4 +1,4 @@
-# A Knight Game.
+# A Knight Game v1.1.
 * A board game of 8x8 size,which has:
 * A White Knight.
 * A Black Knight.
