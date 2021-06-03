@@ -20,7 +20,7 @@ public class GameState {
 
     private  Player SecondPlayer;
 
-    private boolean isGameFinihed ;
+    private boolean isGameFinished ;
 
     private  Player currentPlayer ;
     int Type = 0;
@@ -133,7 +133,7 @@ public class GameState {
      * @param nextKnightCol represents the column of a cell a knight can move to.
      */
     public boolean isGameFinished(int nextKnightRow , int nextKnightCol){
-        isGameFinihed = true;
+        isGameFinished = true;
         ArrayList<Integer[]> validMoves = new ArrayList<>();
         validMoves.add(new Integer [] {nextKnightRow+2,nextKnightCol+1});
         validMoves.add(new Integer [] {nextKnightRow+2,nextKnightCol-1});
@@ -147,11 +147,11 @@ public class GameState {
         for (Integer [] cell :validMoves){
             if(0 <= cell[0] && cell[0] <= 7 && 0 <= cell[1] && cell[1] <= 7){
                 if(this.board[cell[0]][cell[1]].getType()==0 ||this.board[cell[0]][cell[1]].getType()==-1 ){
-                    isGameFinihed=false;
+                    isGameFinished=false;
                 }
             }
         }
-        return isGameFinihed;
+        return isGameFinished;
     }
 
     /**
