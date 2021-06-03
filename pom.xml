@@ -8,8 +8,8 @@
 <version>1.0</version>
 <description>The Knights Game </description>
 <scm>
-    <developerConnection>scm:git:https://github.com/Hammoud188/StonesGame.git</developerConnection>
-    <connection>scm:git:https://github.com/Hammoud188/StonesGame.git</connection>
+    <developerConnection>scm:https://github.com/manlikezaze/KnightGame.git</developerConnection>
+    <connection>scm:https://github.com/manlikezaze/KnightGame.git</connection>
 </scm>
 <developers>
     <developer>
